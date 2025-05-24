@@ -12,9 +12,10 @@ markdown: kramdown
 highlighter: rouge
 
 # Theme and plugins
-theme: jekyll-theme-minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: dusk        # enables dark/light toggle
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
