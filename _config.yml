@@ -1,21 +1,26 @@
+# _config.yml
+
 # Site metadata
 title: "Rutva Pandya"
 email: your.email@example.com
 description: "Aspiring Software Engineer & NLP Enthusiast"
 
-# URLs
-baseurl: ""                        # no subpath
-url: "https://rutvapandya.github.io"  
+# URL settings
+baseurl: ""                           # no subpath
+url: "https://rutvapandya.com"        # your custom domain
 
 # Markdown and syntax highlighting
 markdown: kramdown
 highlighter: rouge
 
-# Theme and plugins
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: dusk        # enables dark/light toggle
+# Remote theme (Minimal Mistakes)
+remote_theme: mmistakes/minimal-mistakes@HEAD
 
+# Plugins to enable
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
+
+# (Optional) any Minimal Mistakes config goes here, e.g.:
+minimal_mistakes_skin: dusk
