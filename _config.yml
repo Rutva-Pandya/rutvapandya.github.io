@@ -5,8 +5,8 @@ description: "Aspiring Software Engineer & NLP Enthusiast"
 baseurl: ""
 url: "https://rutvapandya.com"
 
-# Theme
-remote_theme: "mmistakes/minimal-mistakes@HEAD"
+# Theme - use specific version instead of HEAD
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
 # Build settings
 markdown: kramdown
