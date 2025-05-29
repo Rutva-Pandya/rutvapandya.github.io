@@ -1,12 +1,12 @@
 # Site Settings
 title: "Rutva Pandya"
 email: your.email@example.com
-description: "Aspiring Software Engineer & NLP Enthusiast"
+description: "Software Engineering Student & NLP Researcher"
 baseurl: ""
 url: "https://rutvapandya.com"
 
-# Theme - use specific version instead of HEAD
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+# Use built-in GitHub Pages theme (guaranteed to work)
+theme: minima
 
 # Build settings
 markdown: kramdown
@@ -17,71 +17,18 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-gist
-  - jemoji
 
-# Theme Settings
-minimal_mistakes_skin: "default"
+# Social links
+github_username: Rutva-Pandya
+linkedin_username: yourprofile
+twitter_username: yourhandle
 
-# Site Author
-author:
-  name: "Rutva Pandya"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "Software Engineering Student & NLP Researcher"
-  location: "Your Location"
-  email: "your.email@example.com"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.email@example.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/Rutva-Pandya"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourprofile"
+# Navigation
+header_pages:
+  - about.md
 
-# Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/Rutva-Pandya"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.email@example.com"
-
-# Collections and Defaults
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:title/
-
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-# Exclude from processing
+# Exclude files
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor/
