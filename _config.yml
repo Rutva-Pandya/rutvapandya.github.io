@@ -1,26 +1,106 @@
-# _config.yml
-
-# Site metadata
+# Site Settings
 title: "Rutva Pandya"
 email: your.email@example.com
 description: "Aspiring Software Engineer & NLP Enthusiast"
+baseurl: ""
+url: "https://rutvapandya.com"
 
-# URL settings
-baseurl: ""                           # no subpath
-url: "https://rutvapandya.com"        # your custom domain
+# Social Links
+github_username: Rutva-Pandya
+twitter_username: yourhandle
+linkedin_username: yourprofile
 
-# Markdown and syntax highlighting
+# Build settings
 markdown: kramdown
 highlighter: rouge
+remote_theme: "mmistakes/minimal-mistakes@HEAD"
 
-# Remote theme (Minimal Mistakes)
-remote_theme: mmistakes/minimal-mistakes@HEAD
-
-# Plugins to enable
+# Plugins
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-gist
+  - jemoji
 
-# (Optional) any Minimal Mistakes config goes here, e.g.:
-minimal_mistakes_skin: dusk
+# Theme Settings
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Author
+author:
+  name: "Rutva Pandya"
+  avatar: "/assets/images/bio-photo.jpg" # path to your photo
+  bio: "Software Engineering Student & NLP Researcher"
+  location: "Your Location"
+  email: "your.email@example.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.email@example.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://rutvapandya.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Rutva-Pandya"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourprofile"
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Rutva-Pandya"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.email@example.com"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
