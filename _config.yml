@@ -5,19 +5,15 @@ description: "Aspiring Software Engineer & NLP Enthusiast"
 baseurl: ""
 url: "https://rutvapandya.com"
 
-# Social Links
-github_username: Rutva-Pandya
-twitter_username: yourhandle
-linkedin_username: yourprofile
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@HEAD"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-remote_theme: "mmistakes/minimal-mistakes@HEAD"
 
-# Plugins
+# Plugins (GitHub Pages compatible only)
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -25,12 +21,12 @@ plugins:
   - jemoji
 
 # Theme Settings
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default"
 
 # Site Author
 author:
   name: "Rutva Pandya"
-  avatar: "/assets/images/bio-photo.jpg" # path to your photo
+  avatar: "/assets/images/bio-photo.jpg"
   bio: "Software Engineering Student & NLP Researcher"
   location: "Your Location"
   email: "your.email@example.com"
@@ -38,9 +34,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:your.email@example.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://rutvapandya.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Rutva-Pandya"
@@ -58,49 +51,37 @@ footer:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:your.email@example.com"
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
+# Collections and Defaults
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Exclude from processing
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
   - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
+  - Gemfile.lock
   - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
