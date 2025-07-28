@@ -3,22 +3,23 @@ layout: home
 title: "Rutva Pandya"
 ---
 
-<div class="intro-section">
-  <div class="profile-container">
-    <img src="/assets/images/profile.jpg" alt="Rutva Pandya" class="profile-photo">
-    <div class="intro-text">
-      <h1>Rutva Pandya</h1>
-      <p class="tagline">CS Masters Student • NLP Researcher</p>
-      <p class="description">
-        I'm a Computer Science masters student at [Your University], with a focus on Natural Language Processing 
-        and Machine Learning. My interests lie in developing efficient and accessible NLP tools that can work 
-        across different languages and domains.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:your.email@example.com">📧 Email</a>
-        <a href="https://github.com/Rutva-Pandya">🐙 GitHub</a>
-        <a href="https://linkedin.com/in/yourprofile">💼 LinkedIn</a>
-      </div>
+<div class="about-intro">
+  <img src="/assets/images/profile.jpg" alt="Rutva Pandya" class="about-photo">
+  <div class="about-text">
+    <h1>Rutva Pandya</h1>
+    <p class="tagline">CS Masters Student • NLP Researcher</p>
+    <p>
+      I'm a Computer Science masters student at [Your University], with a focus on Natural Language Processing 
+      and Machine Learning. My interests lie in developing efficient and accessible NLP tools that can work 
+      across different languages and domains.
+    </p>
+    <p>
+      This portfolio showcases my academic journey and research interests as I progress through my program.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com">📧 Email</a>
+      <a href="https://github.com/Rutva-Pandya">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile">💼 LinkedIn</a>
     </div>
   </div>
 </div>
@@ -128,7 +129,7 @@ As I progress through my masters program, I plan to:
 
 ## About This Site
 
-This portfolio showcases my academic journey and research interests. I'll be regularly updating it with:
+This portfolio will be regularly updated with:
 
 - **Publications** - Papers, preprints, and conference presentations as they become available
 - **Blog Posts** - Updates on research progress and insights from coursework
@@ -151,10 +152,10 @@ Feel free to reach out!
 
 **📧 Email:** [your.email@university.edu](mailto:your.email@university.edu)  
 **🏢 Office:** [Building Name, Room Number] *(if applicable)*  
-**🐙 GitHub:** [github.com/your-username](https://github.com/your-username)  
+**�� GitHub:** [github.com/your-username](https://github.com/your-username)  
 **💼 LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)  
 **📄 CV:** [Download PDF](/assets/files/cv.pdf) *(coming soon)*
 
 ---
 
-*Last updated: January 2025*
+*Last updated: July 2025*
