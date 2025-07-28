@@ -1,34 +1,44 @@
-# Site Settings
 title: "Rutva Pandya"
-email: your.email@example.com
-description: "Software Engineering Student & NLP Researcher"
+email: your.email@university.edu
+description: "CS Masters Student & NLP Researcher"
 baseurl: ""
 url: "https://rutvapandya.com"
-
-# Use built-in GitHub Pages theme (guaranteed to work)
-theme: minima
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
+theme: minima
 
-# Plugins (GitHub Pages compatible only)
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Social links
+# Social links (update these with your actual usernames)
 github_username: Rutva-Pandya
 linkedin_username: yourprofile
-twitter_username: yourhandle
 
 # Navigation
 header_pages:
+  - index.md
   - about.md
+  - publications.md
+  - blog.md
 
-# Exclude files
+# Author information
+author:
+  name: "Rutva Pandya"
+  email: "your.email@university.edu"
+
+# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - "*.tmp"
+  - "*.bak"

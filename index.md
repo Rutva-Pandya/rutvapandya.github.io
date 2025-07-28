@@ -1,40 +1,50 @@
 ---
 layout: home
+title: "Home"
 ---
 
-# Welcome to My Academic Portfolio
-
-I am **Rutva Pandya**, a passionate software engineering student with expertise in **Natural Language Processing** and **Machine Learning**. 
-
-## About Me
-
-Currently pursuing my degree, I specialize in building intelligent systems and exploring the intersection of language and computation. I have experience working with **Python, JavaScript, and modern web technologies**, and have contributed to projects in **NLP research and web development**.
-
-## Research Interests
-
-- **Natural Language Processing**: Transformer models, sentiment analysis, text classification
-- **Machine Learning**: Deep learning, neural networks, supervised learning  
-- **Software Engineering**: Full-stack development, API design, system architecture
-
-## Featured Projects
-
-**[Project Name 1](https://github.com/Rutva-Pandya/project1)**  
-*NLP Research Project*  
-A comprehensive study on sentiment analysis using transformer models. Implemented BERT-based classification achieving 94% accuracy on social media data.
-
-**[Project Name 2](https://github.com/Rutva-Pandya/project2)**  
-*Web Application*  
-Full-stack application built with React and Node.js for real-time text analysis. Features include emotion detection and linguistic pattern recognition.
-
-## Latest Updates
-
-- **January 2025:** Started new research project on multimodal NLP
-- **December 2024:** Presented research at [Conference Name]
-- **November 2024:** Paper accepted at [Conference/Journal]
+<div class="intro-section">
+  <div class="profile-container">
+    <img src="/assets/images/profile.jpg" alt="Rutva Pandya" class="profile-photo">
+    <div class="intro-text">
+      <h1>Rutva Pandya</h1>
+      <p class="tagline">CS Masters Student • NLP Researcher</p>
+      <p class="description">
+        Welcome to my academic portfolio! I'm a Computer Science masters student with interests in 
+        Natural Language Processing and Machine Learning. This site will showcase my research progress, 
+        publications, and projects as I advance through my program.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com">📧 Email</a>
+        <a href="https://github.com/Rutva-Pandya">🐙 GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile">💼 LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
-## Connect With Me
+## About This Site
 
-📧 **Email:** [your.email@example.com](mailto:your.email@example.com)  
-💼 **LinkedIn:** [Your Profile](https://linkedin.com/in/yourprofile)
+This portfolio is currently under development as I progress through my masters program. I'll be adding:
+
+- **Research Projects** - Current and completed work
+- **Publications** - Papers, preprints, and conference presentations  
+- **Blog Posts** - Updates on research progress and insights
+- **Resources** - Code repositories and datasets
+
+Check back soon for updates, or feel free to reach out directly!
+
+---
+
+## Current Status
+
+🎓 **Education:** Pursuing MS in Computer Science  
+🔬 **Research Focus:** Natural Language Processing, Machine Learning  
+📍 **Location:** [Your Location]  
+📧 **Contact:** [your.email@example.com](mailto:your.email@example.com)
+
+---
+
+*Last updated: July 2025*
