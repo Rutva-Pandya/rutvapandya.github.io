@@ -38,15 +38,14 @@ title: "Home"
   </div>
 </div>
 
-<div class="content-section" style="font-size: 1.05em; padding-bottom: 1.2em; margin-bottom: 2em;">
+<div class="content-section">
   <h2>Research Interests</h2>
-  <p>I'm broadly interested in machine learning and natural language processing, with a focus on the following areas:</p>
+  <p>I'm particularly interested in:</p>
   
   <ul>
-    <li><strong>Large Language Models:</strong> Reasoning capabilities, instruction tuning, and prompt-based control</li>
-    <li><strong>Multimodal Learning:</strong> Combining language with vision and other modalities for more generalizable understanding</li>
-    <li><strong>Information Retrieval:</strong> Improving retrieval for grounding, QA, and retrieval-augmented generation systems</li>
-    <li><strong>AI Applications:</strong> Building practical and accessible ML/NLP tools for real-world use across domains</li>
+    <li><strong>Natural Language Processing:</strong> Cross-lingual text analysis, sentiment analysis, and text classification</li>
+    <li><strong>Machine Learning:</strong> Deep learning architectures, transfer learning, and model optimization</li>
+    <li><strong>AI Applications:</strong> Developing practical NLP tools for real-world problems</li>
   </ul>
 </div>
 
@@ -76,7 +75,7 @@ title: "Home"
 <div class="content-section">
   <h2>Education</h2>
   
-  <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
+  <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #2c3e50;">
     <h3>Master of Science in Computer Science</h3>
     <p style="font-style: italic; color: #6c757d;">
       <a href="https://www.jhu.edu/" target="_blank" style="color: #3498db; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Johns Hopkins University</a> • 2025 - 2027
@@ -86,7 +85,7 @@ title: "Home"
     </ul>
   </div>
 
-  <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
+  <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #2c3e50;">
     <h3>Bachelor of Science in Computer Engineering</h3>
     <p style="font-style: italic; color: #6c757d;">
       <a href="https://illinois.edu/" target="_blank" style="color: #3498db; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">University of Illinois Urbana-Champaign</a> • 2021 - 2025
@@ -128,7 +127,7 @@ title: "Home"
 <div class="content-section">
   <h2>Technical Skills</h2>
   
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin: 1.5rem 0;">
     <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-top: 4px solid #3498db; text-align: center;">
       <h4>Programming Languages</h4>
       <p>Python, Java, JavaScript, C/C++, R</p>
@@ -146,4 +145,13 @@ title: "Home"
       <p>Git, Docker, VS Code, Google Cloud Platform</p>
     </div>
   </div>
+  
+  <style>
+    @media (max-width: 768px) {
+      .content-section > div:last-child {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+      }
+    }
+  </style>
 </div>
