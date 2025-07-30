@@ -11,7 +11,7 @@
   <div style="display: flex !important; gap: 3rem !important; max-width: 1200px !important; margin: 0 auto !important; padding: 2rem !important; min-height: 100vh !important;">
     
     <!-- Profile Card -->
-    <div style="position: sticky !important; top: 2rem !important; width: 300px !important; height: fit-content !important; flex-shrink: 0 !important;">
+    <div class="profile-sidebar" style="position: sticky !important; top: 2rem !important; width: 300px !important; height: fit-content !important; flex-shrink: 0 !important;">
       <div style="text-align: center !important;">
         <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name | default: site.title }}" style="width: 220px !important; height: 220px !important; border-radius: 50% !important; object-fit: cover !important; object-position: center top !important; margin: 0 auto 1.5rem auto !important; display: block !important; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;" onerror="this.style.display='none'">
         
@@ -58,7 +58,7 @@
     
   </div>
   
-  <!-- Simple Mobile Fix -->
+  <!-- Mobile CSS - Non-sticky profile -->
   <style>
     @media (max-width: 768px) {
       main[aria-label="Content"] > div {
@@ -67,16 +67,21 @@
         padding: 1rem !important;
       }
       
-      main[aria-label="Content"] > div > div:first-child {
+      .profile-sidebar {
         position: static !important;
         width: 100% !important;
         max-width: 320px !important;
-        margin: 0 auto !important;
+        margin: 0 auto 2rem auto !important;
+        top: auto !important;
       }
       
       main[aria-label="Content"] img {
         width: 160px !important;
         height: 160px !important;
+      }
+      
+      main[aria-label="Content"] h1 {
+        font-size: 1.5rem !important;
       }
     }
   </style>
