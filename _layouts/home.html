@@ -8,17 +8,17 @@
 {%- include header.html -%}
 
 <main class="page-content" aria-label="Content" style="padding: 0 !important;">
-  <div style="display: flex !important; gap: 3rem !important; max-width: 1200px !important; margin: 0 auto !important; padding: 2rem !important; min-height: 100vh !important;">
+  <div class="desktop-layout" style="display: flex !important; gap: 3rem !important; max-width: 1200px !important; margin: 0 auto !important; padding: 2rem !important; min-height: 100vh !important;">
     
     <!-- Profile Card -->
-    <div style="position: sticky !important; top: 2rem !important; width: 300px !important; height: fit-content !important; flex-shrink: 0 !important;">
+    <div class="profile-card" style="position: sticky !important; top: 2rem !important; width: 300px !important; height: fit-content !important; flex-shrink: 0 !important;">
       <div style="text-align: center !important;">
         <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name | default: site.title }}" style="width: 220px !important; height: 220px !important; border-radius: 50% !important; object-fit: cover !important; object-position: center top !important; margin: 0 auto 1.5rem auto !important; display: block !important; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;" onerror="this.style.display='none'">
         
         <h1 style="font-size: 1.8rem !important; font-weight: 700 !important; color: #2c3e50 !important; margin: 0 0 0.5rem 0 !important;">{{ site.author.name | default: site.title }}</h1>
         <div style="font-size: 1.1rem !important; color: #3498db !important; font-weight: 600 !important; margin: 0 0 2.5rem 0 !important;">CS Masters Student</div>
         
-        <div style="display: flex !important; flex-direction: column !important; gap: 1.2rem !important; align-items: center !important;">
+        <div class="social-links" style="display: flex !important; flex-direction: column !important; gap: 1.2rem !important; align-items: center !important;">
           
           {% if site.linkedin_username %}
           <a href="https://linkedin.com/in/{{ site.linkedin_username }}" style="color: #0077b5 !important; text-decoration: none !important; font-size: 1rem !important; font-weight: 500 !important; transition: all 0.2s ease !important; display: flex !important; align-items: center !important; gap: 0.7rem !important;" target="_blank" onmouseover="this.style.transform='translateY(-1px)'; this.style.color='#005582';" onmouseout="this.style.transform='translateY(0)'; this.style.color='#0077b5';">
@@ -52,49 +52,48 @@
     </div>
 
     <!-- Main Content -->
-    <div style="flex: 1 !important; min-width: 0 !important;">
+    <div class="main-content" style="flex: 1 !important; min-width: 0 !important;">
       {{ content }}
     </div>
     
   </div>
   
-  <!-- Improved Responsive Styles -->
+  <!-- Mobile-First Responsive CSS -->
   <style>
     @media (max-width: 768px) {
-      main[aria-label="Content"] > div {
-        flex-direction: column !important;
-        gap: 1.5rem !important;
+      .desktop-layout {
+        display: block !important;
         padding: 1rem !important;
       }
       
-      main[aria-label="Content"] > div > div:first-child {
-        position: relative !important;
-        top: auto !important;
+      .profile-card {
+        position: static !important;
         width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 auto !important;
-        order: 1 !important;
+        margin-bottom: 2rem !important;
+        background: #f8f9fa !important;
+        padding: 1.5rem !important;
+        border-radius: 12px !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
       }
       
-      main[aria-label="Content"] > div > div:last-child {
-        order: 2 !important;
-        margin-top: 0 !important;
+      .profile-card img {
+        width: 120px !important;
+        height: 120px !important;
       }
       
-      main[aria-label="Content"] img {
-        width: 140px !important;
-        height: 140px !important;
+      .profile-card h1 {
+        font-size: 1.4rem !important;
       }
       
-      main[aria-label="Content"] h1 {
-        font-size: 1.5rem !important;
-      }
-      
-      main[aria-label="Content"] > div > div:first-child > div > div {
+      .social-links {
         flex-direction: row !important;
         justify-content: center !important;
         flex-wrap: wrap !important;
         gap: 1rem !important;
+      }
+      
+      .main-content {
+        width: 100% !important;
       }
     }
   </style>
