@@ -1,5 +1,5 @@
 title: "Rutva Pandya"
-email: your.email@university.edu
+email: rpandya4@jh.edu
 description: "CS Masters Student & NLP Researcher"
 baseurl: ""
 url: "https://rutvapandya.com"
@@ -17,19 +17,23 @@ plugins:
 
 # Social links (update these with your actual usernames)
 github_username: Rutva-Pandya
-linkedin_username: yourprofile
+linkedin_username: rutva-pandya
+x_username: RutvaPandya8
 
 # Navigation
 header_pages:
-  - index.md
-  - about.md
   - publications.md
   - blog.md
 
-# Author information
+# Author information (properly formatted)
 author:
   name: "Rutva Pandya"
-  email: "your.email@university.edu"
+  email: "rpandya4@jh.edu"
+
+# Custom CSS
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Exclude from processing
 exclude:

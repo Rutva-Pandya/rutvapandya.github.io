@@ -35,9 +35,9 @@ I'll start posting regular updates as I settle into my research routine and have
 For now, you can follow my progress through:
 
 - **GitHub:** [github.com/Rutva-Pandya](https://github.com/Rutva-Pandya)
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- **Email:** [your.email@example.com](mailto:your.email@example.com)
+- **LinkedIn:** [linkedin.com/in/rutva-pandya](https://linkedin.com/in/rutva-pandya)
+- **X:** [x.com/RutvaPandya8](https://x.com/RutvaPandya8)
 
 ---
 
-*This page will be updated with regular content starting in Spring 2025.*
+*This page will be updated with regular content starting in Fall 2025.*
