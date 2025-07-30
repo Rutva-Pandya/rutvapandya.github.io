@@ -8,10 +8,70 @@
 {%- include header.html -%}
 
 <main class="page-content" aria-label="Content" style="padding: 0 !important;">
-  <div style="display: flex !important; gap: 3rem !important; max-width: 1200px !important; margin: 0 auto !important; padding: 2rem !important; min-height: 100vh !important;">
+  
+  <!-- Mobile-first CSS -->
+  <style>
+    .main-container {
+      display: flex;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+    
+    .profile-sidebar {
+      position: sticky;
+      top: 2rem;
+      width: 300px;
+      height: fit-content;
+      flex-shrink: 0;
+    }
+    
+    .main-content {
+      flex: 1;
+      min-width: 0;
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .main-container {
+        display: block !important;
+        flex-direction: none !important;
+        gap: 0 !important;
+        padding: 1rem !important;
+      }
+      
+      .profile-sidebar {
+        position: relative !important;
+        position: static !important;
+        top: 0 !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 auto 2rem auto !important;
+        height: auto !important;
+      }
+      
+      .profile-sidebar img {
+        width: 160px !important;
+        height: 160px !important;
+      }
+      
+      .profile-sidebar h1 {
+        font-size: 1.5rem !important;
+      }
+      
+      .main-content {
+        width: 100% !important;
+        flex: none !important;
+      }
+    }
+  </style>
+  
+  <div class="main-container">
     
     <!-- Profile Card -->
-    <div class="profile-sidebar" style="position: sticky !important; top: 2rem !important; width: 300px !important; height: fit-content !important; flex-shrink: 0 !important;">
+    <div class="profile-sidebar">
       <div style="text-align: center !important;">
         <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name | default: site.title }}" style="width: 220px !important; height: 220px !important; border-radius: 50% !important; object-fit: cover !important; object-position: center top !important; margin: 0 auto 1.5rem auto !important; display: block !important; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;" onerror="this.style.display='none'">
         
@@ -52,39 +112,11 @@
     </div>
 
     <!-- Main Content -->
-    <div style="flex: 1 !important; min-width: 0 !important;">
+    <div class="main-content">
       {{ content }}
     </div>
     
   </div>
-  
-  <!-- Mobile CSS - Non-sticky profile -->
-  <style>
-    @media (max-width: 768px) {
-      main[aria-label="Content"] > div {
-        flex-direction: column !important;
-        gap: 2rem !important;
-        padding: 1rem !important;
-      }
-      
-      .profile-sidebar {
-        position: static !important;
-        width: 100% !important;
-        max-width: 320px !important;
-        margin: 0 auto 2rem auto !important;
-        top: auto !important;
-      }
-      
-      main[aria-label="Content"] img {
-        width: 160px !important;
-        height: 160px !important;
-      }
-      
-      main[aria-label="Content"] h1 {
-        font-size: 1.5rem !important;
-      }
-    }
-  </style>
 </main>
 
 <!-- Clean Footer -->
