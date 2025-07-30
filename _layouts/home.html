@@ -11,13 +11,12 @@
   <div style="display: flex !important; gap: 3rem !important; max-width: 1200px !important; margin: 0 auto !important; padding: 2rem !important; min-height: 100vh !important;">
     
     <!-- Profile Card -->
-    <div style="position: sticky !important; top: 2rem !important; width: 280px !important; height: fit-content !important; flex-shrink: 0 !important;">
+    <div style="position: sticky !important; top: 2rem !important; width: 300px !important; height: fit-content !important; flex-shrink: 0 !important;">
       <div style="text-align: center !important;">
-        <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name | default: site.title }}" style="width: 160px !important; height: 160px !important; border-radius: 50% !important; object-fit: cover !important; margin: 0 auto 1.5rem auto !important; display: block !important; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;" onerror="this.style.display='none'">
+        <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name | default: site.title }}" style="width: 220px !important; height: 220px !important; border-radius: 50% !important; object-fit: cover !important; object-position: center top !important; margin: 0 auto 1.5rem auto !important; display: block !important; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;" onerror="this.style.display='none'">
         
-        <h1 style="font-size: 1.6rem !important; font-weight: 700 !important; color: #2c3e50 !important; margin: 0 0 0.5rem 0 !important;">{{ site.author.name | default: site.title }}</h1>
-        <div style="font-size: 1rem !important; color: #3498db !important; font-weight: 600 !important; margin: 0 0 0.25rem 0 !important;">CS Master's Student</div>
-        <div style="font-size: 0.9rem !important; color: #6c757d !important; margin: 0 0 2.5rem 0 !important; line-height: 1.4 !important;">Johns Hopkins University</div>
+        <h1 style="font-size: 1.8rem !important; font-weight: 700 !important; color: #2c3e50 !important; margin: 0 0 0.5rem 0 !important;">{{ site.author.name | default: site.title }}</h1>
+        <div style="font-size: 1.1rem !important; color: #3498db !important; font-weight: 600 !important; margin: 0 0 2.5rem 0 !important;">CS Masters Student</div>
         
         <div style="display: flex !important; flex-direction: column !important; gap: 1.2rem !important; align-items: center !important;">
           
@@ -59,12 +58,12 @@
     
   </div>
   
-  <!-- Responsive Styles -->
+  <!-- Improved Responsive Styles -->
   <style>
     @media (max-width: 768px) {
       main[aria-label="Content"] > div {
         flex-direction: column !important;
-        gap: 2rem !important;
+        gap: 1.5rem !important;
         padding: 1rem !important;
       }
       
@@ -72,19 +71,46 @@
         position: relative !important;
         top: auto !important;
         width: 100% !important;
-        max-width: 300px !important;
+        max-width: 100% !important;
         margin: 0 auto !important;
+        order: 1 !important;
+      }
+      
+      main[aria-label="Content"] > div > div:last-child {
+        order: 2 !important;
+        margin-top: 0 !important;
       }
       
       main[aria-label="Content"] img {
-        width: 120px !important;
-        height: 120px !important;
+        width: 140px !important;
+        height: 140px !important;
+      }
+      
+      main[aria-label="Content"] h1 {
+        font-size: 1.5rem !important;
+      }
+      
+      main[aria-label="Content"] > div > div:first-child > div > div {
+        flex-direction: row !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 1rem !important;
       }
     }
   </style>
 </main>
 
-{%- include footer.html -%}
+<!-- Clean Footer -->
+<footer style="background: #f8f9fa; border-top: 1px solid #e9ecef; margin-top: 4rem;">
+  <div style="text-align: center; padding: 2rem 0; color: #6c757d; max-width: 1200px; margin: 0 auto;">
+    <p style="margin: 0; font-size: 0.9rem;">
+      © {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}
+    </p>
+    <p style="margin: 0.5rem 0 0 0; font-size: 0.8rem;">
+      Built with Jekyll • Hosted on GitHub Pages
+    </p>
+  </div>
+</footer>
 
 </body>
 
